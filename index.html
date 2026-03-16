@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>بن نوح</title>
+    <div class="cart-icon">
+🛒
+<span id="cartCount">0</span>
+</div>
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</a>
+<body>
+    
+    <header>
+        <h1 class="logo">قهوه نوح</h1>
+        <p class="tagline">coffee</p>
+    </header>
+
+    <section class="intro">
+        <p> ارقام التواصل : 01091673329 - 01201807866</p>
+    </section>
+
+    <section class="products">
+        <h2>منتجاتنا</h2>
+
+        <div class="product" data-name="  ربع بن ساده " data-price="160">
+            <img src="5836672771163884826_120.jpg" alt="  ربع بن ساده">
+            <h3>  ربع بن ساده (فاتح - وسط - غامق) </h3>
+            <p>السعر: 160 ج.م</p>
+          <button onclick="chooseWeight('بن ساده',160)">أضف للسلة</button>
+        </div>
+
+        <div class="product" data-name="  ربع بن محوج" data-price="180">
+            <img src="5836672771163884827_120.jpg" alt=" ربع بن محوج">
+            <h3>ربع بن محوج</h3>
+            <p>السعر: 180 ج.م</p>
+            <button onclick="chooseWeight('بن محوج',180)">أضف للسلة</button>
+        </div>
+
+        <div class="product" data-name=" قهوة بندق" data-price="150">
+            <img src="5836672771163884828_120.jpg" alt="ربع قهوة بندق">
+            <h3>ربع قهوة بندق</h3>
+            <p>السعر: 150 ج.م</p>
+             <button onclick="chooseWeight('قهوه بندق',150)">أضف للسلة</button>
+        </div>
+
+        <div class="product" data-name="ربع قهوة فرنسوي" data-price="150">
+            <img src="5836672771163884830_120.jpg" alt="ربع قهوة فرنسوي">
+            <h3>ربع قهوة فرنسوي</h3>
+            <p>السعر: 150 ج.م</p>
+            <button onclick="chooseWeight('قهوه فرنساوي',150)">أضف للسلة</button>
+        </div>
+
+        <div class="product" data-name="200 جرام نسكافيه" data-price="180">
+            <img src="5836672771163884829_120.jpg" alt="200 جرام نسكافيه">
+            <h3>200 جرام نسكافيه</h3>
+            <p>السعر: 180 ج.م</p>
+            <button onclick="chooseWeight('200 جرام نسكافيه',180)">أضف للسلة</button>
+        </div>
+
+        <div class="product" data-name="ربع كاكاو إسباني" data-price="160">
+            <img src="5836672771163884831_120.jpg" alt="ربع كاكاو إسباني">
+            <h3>ربع كاكاو إسباني</h3>
+            <p>السعر: 160 ج.م</p>
+            <button onclick="chooseWeight('ربع كاكاو إسباني',160)">أضف للسلة</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>سلة مشترياتك</h2>
+        <ul id="cartItems"></ul>
+        <p>الإجمالي: <span id="total">0</span> جنيه</p>
+       <button onclick="showOrderForm()">اطلب الآن</button>
+    </section>
+    <!-- نافذة تأكيد الطلب -->
+<div id="orderPopup" class="popup">
+
+<div class="popup-content">
+
+<h2>تأكيد الطلب</h2>
+
+<label>الاسم</label>
+<input type="text" id="customerName">
+
+<label>رقم التليفون</label>
+<input type="text" id="phone">
+
+<label>العنوان</label>
+<input type="text" id="address">
+
+<label>المحافظة</label>
+<input type="text" id="city">
+
+<button onclick="confirmOrder()">تأكيد الطلب</button>
+<button onclick="closePopup()">إلغاء</button>
+
+</div>
+
+</div>
+
+<div id="weightPopup" class="popup">
+
+<div class="popup-content">
+
+<h3>اختر الوزن</h3>
+
+<button onclick="addWeight('ربع كيلو',1)">ربع كيلو</button>
+<button onclick="addWeight('نصف كيلو',2)">نصف كيلو</button>
+<button onclick="addWeight('كيلو',4)">كيلو</button>
+
+<br><br>
+
+<button onclick="closeWeight()">إلغاء</button>
+
+</div>
+
+</div>
+
+ <div id="startPage" class="start-page">
+
+<div class="start-content">
+
+<h1>قهوة نوح ☕</h1>
+
+<p>
+
+
+</p>
+
+<button onclick="openStore()">ادخل المتجر</button>
+
+</div>
+
+</div>
+<a href="https://wa.me/01123385820" class="whatsapp-float" target="_blank"></a>
+   
+
+   
+
+    <!-- ربط ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
