@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </a>
 <body>
+  
     
     <header>
         <h1 class="logo">قهوه نوح</h1>
@@ -73,28 +76,28 @@
         <h2>سلة مشترياتك</h2>
         <ul id="cartItems"></ul>
         <p>الإجمالي: <span id="total">0</span> جنيه</p>
-       <button onclick="showOrderForm()">اطلب الآن</button>
+       <button onclick="showOrderForm()">اطلب الآن</button>>
     </section>
     <!-- نافذة تأكيد الطلب -->
 <div id="orderPopup" class="popup">
 
 <div class="popup-content">
 
+<div id="orderForm" class="order-form">
+
 <h2>تأكيد الطلب</h2>
 
-<label>الاسم</label>
-<input type="text" id="customerName">
+<input type="text" id="customerName" placeholder="الاسم">
 
-<label>رقم التليفون</label>
-<input type="text" id="phone">
+<input type="text" id="phoneNumber" placeholder="رقم التليفون">
 
-<label>العنوان</label>
-<input type="text" id="address">
+<input type="text" id="address" placeholder="العنوان">
 
-<label>المحافظة</label>
-<input type="text" id="city">
+<input type="text" id="city" placeholder="المحافظة">
 
 <button onclick="confirmOrder()">تأكيد الطلب</button>
+
+
 <button onclick="closePopup()">إلغاء</button>
 
 </div>
@@ -119,28 +122,28 @@
 
 </div>
 
- <div id="startPage" class="start-page">
+  <div id="startPage" class="start-page">
 
 <div class="start-content">
 
-<h1>قهوة نوح ☕</h1>
+<h1>بن نوح ☕</h1>
 
-<p>
-
-
-</p>
+<p>مرحبا</p>
 
 <button onclick="openStore()">ادخل المتجر</button>
 
 </div>
 
 </div>
-<a href="https://wa.me/01123385820" class="whatsapp-float" target="_blank"></a>
-   
+<a href="https://wa.me/201091673329?text=مرحبا%20اريد%20الطلب%20من%20قهوة%20نوح" 
+class="whatsapp-float" 
+target="_blank">
+💬
+</a>
 
-   
 
     <!-- ربط ملف JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>
